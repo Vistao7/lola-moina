@@ -1,0 +1,106 @@
+/* ---------------------------------- */
+/* MODIFICACIONES MASIVAS */
+/* ---------------------------------- */
+/* FONTS */
+    /* Tangerine (uso en logo) */
+@font-face {
+    font-family: "Tangerine";
+    src: url(../fonts/Tangerine_Regular.ttf);
+}
+    /* Unna Italic (Uso en titulos) */
+@font-face {
+    font-family: "Unna Italic";
+    src: url(../fonts/Unna-Italic.ttf);
+}
+    /* SourceSansPro (Para uso en el contenido) */
+@font-face {
+    font-family: "SourceSansPro Light";
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+@font-face {
+    font-family: "SourceSansPro Light Italic";
+    src: url(../fonts/SourceSansPro-LightItalic.ttf);
+}
+@font-face {
+    font-family: "SourceSansPro Regular";
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+/* TODO, PARA FORMATEAR TODAS LAS PALABRAS A USAR EN FONT SOURCESANS */
+*{
+    font-family: "SourceSansPro Light";
+}
+
+/* BODY */
+body{   
+    background-color: #fcf6f1;
+    margin: 0%;
+}
+
+.body--backgroudColorAlternative{
+    background-color: #fdfaf7;
+}
+/* FOOTER */
+footer{
+    background: rgb(156,175,191);
+    background: linear-gradient(0deg, rgba(156,175,191,1) 0%, rgba(156,175,191,1) 83%, rgba(255,255,255,1) 100%);
+}
+/* HEADER */
+header{
+    background: rgb(221,241,255);
+    background: linear-gradient(180deg, rgba(221,241,255,1) 0%, rgba(221,241,255,0.95) 50%, rgba(221,241,255,0.8) 75%, rgba(221,241,255,0.5) 90%, rgba(255,255,255,0) 100%);
+}
+.header--center{
+    text-align: center;
+}
+/* ---------------------------------- */
+/* MODIFICACIONES ESPECIFICAS */
+/* ---------------------------------- */
+/* HEADER */
+    /* LIST */
+.header__list--none--bold{
+    list-style-type: none;
+    font-weight: bold;
+}
+.header__list--none{
+    list-style: none;
+}
+    /* H1 */
+.header__h1--fontFamily{
+    font-family: "Tangerine";
+}
+    /* H2 */
+.titulo__h2--fontFamily{
+    font-family: "Unna Italic";
+}
+/* FOOTER */
+    /* LISTA */
+.footer__list--none{
+    list-style: none;
+}
+/* DIV LISTA -- AREA DE CONTACTOS */
+.contactos__body--format--color{
+    overflow: hidden;
+    position: sticky;
+    bottom: 0em;
+    width: fit-content;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 0.8em;
+    border-radius: 150px 150px 0px 0px;
+}
+.contactos__list__images--size{
+    width: 3em;
+    height: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+.contactos__list__item--format{
+    display: inline-block;
+    position: sticky;
+}
+.contactos__list--none{
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    padding: 0%;
+}
