@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- LOGO Y NAVEGACION -->
+    <header class="header--center">
+        <nav>
+            <a href="#">
+                <img src="" alt="Logotipo">
+            </a>
+            <h1 class="header__h1--fontFamily">Lola Moina <br> Joyeria</h1>
+            <ul class="header__list--none--bold">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="./pages/piezas/home-piezas.html">Piezas</a></li>
+                <li><a href="./pages/cuidados.html">Cuidados</a></li>
+                <li><a href="./pages/faq.html">Preguntas</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- CUERPO DE LA PAGINA -->
+    <section>
+        <!-- Aca va un carrusel -->
+        <img src="./images/img1.jpeg" alt="Carrusel">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis repellendus nemo dolorum tempora pariatur autem nulla, ipsam quibusdam neque sequi est nihil libero asperiores possimus voluptates totam, labore consequuntur alias.</p>
+    </section>
+    <section id="sobre">
+        <h2 class="titulo__h2--fontFamily">Sobre mi</h2>
+        <!-- Foto del dueño -->
+        <img src="./images/img2.jpeg" alt="Foto del dueño">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis enim reprehenderit reiciendis modi quasi qui, necessitatibus amet dolores molestiae dolorum illum totam fuga libero veniam officia. Quam eos blanditiis iure!</p>
+    </section>
+    <!-- AREA DE CONTACTOS RRSS (WPP, MAIL, INSTA, ETC) -->
+    <div>
+        <ul>
+            <li class="contactos__list__images--format">
+                <img src="./resources/interface-icons/facebook.svg" alt="Facebook">
+            </li>   
+            <li class="contactos__list__images--format">
+                <a href="#telefono"><img src="./resources/interface-icons/llamada-telefonica.svg" alt="Telefono"></a>
+            </li>
+            <li class="contactos__list__images--format">
+                <a href="https://www.instagram.com/lola.moina/"><img src="./resources/interface-icons/instagram.svg" alt="Instagram"></a>
+            </li>
+            <li class="contactos__list__images--format">
+                <a href="https://wa.me/"><img src="./resources/interface-icons/whatsapp.svg" alt="Whatsapp"></a>
+            </li>
+        </ul>
+    </div>
+    <!-- FOOTER CON DATOS DE CONTACTO -->
+    <footer>
+        <label for="mail">Signup</label>
+        <input type="email" id="mail" name="mail" placeholder="correo@mail.com">
+        <input type="submit" value="Registrar">
+        <p>Contacto</p>
+        <ul class="footer__list--none">
+            <li id="telefono">11-1111-1111</li>
+            <li>placeholder@mail.com</li>
+        </ul>
+        <ul class="footer__list--none">
+            <li>Contacto</li>
+            <li>Sitemap</li>
+            <li>placeholder</li>
+        </ul>
+    </footer>
+</body>
+</html>

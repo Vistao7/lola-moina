@@ -1,0 +1,89 @@
+/* ---------------------------------- */
+/* MODIFICACIONES MASIVAS */
+/* ---------------------------------- */
+/* FONTS */
+/* Tangerine (uso en logo) */
+@font-face {
+    font-family: "Tangerine";
+    src: url(../fonts/Tangerine_Regular.ttf);
+}
+/* ---------------------------------------- */
+/* Unna Italic (Uso en titulos) */
+@font-face {
+    font-family: "Unna Italic";
+    src: url(../fonts/Unna-Italic.ttf);
+}
+/* ---------------------------------------- */
+/* SourceSansPro (Para uso en el contenido) */
+@font-face {
+    font-family: "SourceSansPro Light";
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+@font-face {
+    font-family: "SourceSansPro Light Italic";
+    src: url(../fonts/SourceSansPro-LightItalic.ttf);
+}
+@font-face {
+    font-family: "SourceSansPro Regular";
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+/* TODO, PARA FORMATEAR TODAS LAS PALABRAS A USAR EN FONT SOURCESANS */
+*{
+    font-family: "SourceSansPro Light";
+}
+
+/* BODY */
+body{
+    background-color: #fcf6f1;
+}
+
+.body--backgroudColorAlternative{
+    background-color: #fdfaf7;
+}
+/* FOOTER */
+footer{
+    background-color: #9cafbf;
+}
+/* HEADER */
+header{
+    background-color: #ddf1ff;
+    /* position: fixed;
+    border:; 
+    no funciona :( */
+}
+.header--center{
+    text-align: center;
+}
+/* ---------------------------------- */
+/* MODIFICACIONES ESPECIFICAS */
+/* ---------------------------------- */
+/* LIST */
+.header__list--none--bold{
+    list-style-type: none;
+    font-weight: bold;
+}
+.header__list--none{
+    list-style: none;
+}
+
+/* H1 */
+.header__h1--fontFamily{
+    font-family: "Tangerine";
+}
+/* H2 */
+.titulo__h2--fontFamily{
+    font-family: "Unna Italic";
+}
+/* FOOTER LISTA */
+.footer__list--none{
+    list-style: none;
+}
+/* DIV LISTA -- AREA DE CONTACTOS */
+.contactos__list__images--format{
+    
+    width: 1em;
+    height: 1em;
+}
+.contactos__list--none{
+    list-style: none;
+}

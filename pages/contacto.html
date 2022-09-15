@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="body--backgroudColorAlternative">
+    <!-- LOGO Y NAVEGACION -->
+    <header>
+        <nav>
+            <a href="../index.html">
+                <img src="" alt="Logotipo">
+            </a>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#sobre">Sobre</a></li>
+                <li><a href="./piezas/home-piezas.html">Piezas</a></li>
+                <li><a href="./cuidados.html">Cuidados</a></li>
+                <li><a href="./faq.html">Preguntas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Contacto</h1>
+    <form action="">
+        <fieldset>
+            <legend>Formulario</legend>
+            <!-- Nombre -->
+            <label for="nombreApellido">Nombre y apellido</label>
+            <input type="text" id="nombreApellido" name="nombreApellido" placeholder="Escribir Aqui">
+            <!-- Telefono -->
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+549-11-1111-1111">
+            <!-- Correo -->
+            <label for="mail">Correo Electrónico</label>
+            <input type="email" id="mail" name="mail" placeholder="correo@mail.com">
+            <label for="mailSignup">¿Queres recibir notificaciones sobre otros proyectos?</label>
+            <input type="checkbox" id="mailSignup">
+            <!-- Servicio -->
+            <label for="servicios">Servicios</label>
+            <select name="servicios" id="servicios">
+                <option value="servicio1">servicio1</option>
+                <option value="servicio2">servicio2</option>
+                <option value="servicio3">servicio3</option>
+            </select>
+            <!-- Imagenes -->
+            <label for="imagen">Imagen de Referencia</label>
+            <input type="file" id="imagen" name="imagen">
+            <!-- Comentarios -->
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Ingresar notas adicionales para la pieza"></textarea>
+            <!-- Btn Enviar -->
+            <input type="submit" value="Enviar">
+            <!-- Btn Borrar -->
+            <input type="submit" value="Borrar">
+        </fieldset>
+    </form>
+</body>
+</html>
