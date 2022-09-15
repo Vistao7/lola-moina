@@ -1,3 +1,3 @@
 # lola-moina
-Creacion de sitio web para negocio Lola Moina Joyeria
+Creacion de sitio web para negocio Lola Moina Joyeria<br/>
 Trabajo final de Coderhouse
