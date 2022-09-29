@@ -1,20 +1,23 @@
 /* ---------------------------------- */
 /* MODIFICACIONES MASIVAS */
 /* ---------------------------------- */
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
 /* FONTS */
-/* Tangerine (uso en logo) */
+    /* Tangerine (uso en logo) */
 @font-face {
     font-family: "Tangerine";
     src: url(../fonts/Tangerine_Regular.ttf);
 }
-/* ---------------------------------------- */
-/* Unna Italic (Uso en titulos) */
+    /* Unna Italic (Uso en titulos) */
 @font-face {
     font-family: "Unna Italic";
     src: url(../fonts/Unna-Italic.ttf);
 }
-/* ---------------------------------------- */
-/* SourceSansPro (Para uso en el contenido) */
+    /* SourceSansPro (Para uso en el contenido) */
 @font-face {
     font-family: "SourceSansPro Light";
     src: url(../fonts/SourceSansPro-Light.ttf);
@@ -30,11 +33,13 @@
 /* TODO, PARA FORMATEAR TODAS LAS PALABRAS A USAR EN FONT SOURCESANS */
 *{
     font-family: "SourceSansPro Light";
+    font-size: x-large;
 }
 
 /* BODY */
-body{
+body{   
     background-color: #fcf6f1;
+    margin: 0%;
 }
 
 .body--backgroudColorAlternative{
@@ -42,22 +47,49 @@ body{
 }
 /* FOOTER */
 footer{
-    background-color: #9cafbf;
+    background: rgb(156,175,191);
+    background: linear-gradient(0deg, rgba(156,175,191,1) 0%, rgba(156,175,191,1) 83%, rgba(255,255,255,1) 100%);
 }
 /* HEADER */
 header{
-    background-color: #ddf1ff;
-    /* position: fixed;
-    border:; 
-    no funciona :( */
+    background: rgb(221,241,255);
+    background: linear-gradient(180deg, rgba(221,241,255,1) 0%, rgba(221,241,255,0.95) 50%, rgba(221,241,255,0.8) 75%, rgba(221,241,255,0.5) 90%, rgba(255,255,255,0) 100%);
 }
-.header--center{
-    text-align: center;
+/* BODY FLEX CON SELECTORES ESPECIFICOS */
+.body__content--flex{
+    height: 60em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+.body__content--flex > section{
+    display: flex;
+}
+.body__content--flex > section p:nth-child(1){
+    text-align: right;
+    background-color: #FFEFDB;
+    margin-right: 10%;
+    padding: 2em;
+    flex-grow: 1;
+    border-radius: 0px 35px 35px 0px;
+}
+.body__content--flex > section p:nth-child(2){
+    background-color: #E6FFDC;
+    text-align: left;
+    padding: 2em;
+    flex-grow: 3;
+    border-radius: 35px 0px 0px 35px;
+}
+
 /* ---------------------------------- */
 /* MODIFICACIONES ESPECIFICAS */
 /* ---------------------------------- */
-/* LIST */
+/* HEADER */
+    /* LIST */
+
+.header--center{
+    text-align: center;
+}
 .header__list--none--bold{
     list-style-type: none;
     font-weight: bold;
@@ -65,27 +97,246 @@ header{
 .header__list--none{
     list-style: none;
 }
-
-/* H1 */
+    /* H1 - INICIO */
 .header__h1--fontFamily{
     font-family: "Tangerine";
+    font-size: 300%;
+    padding: 0.5em;
 }
-/* H2 */
+    /* H1 - RESTO DE PAGINAS */
+.header__h1--size--center{
+    font-size: 200%;
+    padding: 00.5em;
+}
+    /* H2 */
 .titulo__h2--fontFamily{
     font-family: "Unna Italic";
 }
-/* FOOTER LISTA */
+/* FOOTER */
+    /* LIST */
 .footer__list--none{
     list-style: none;
 }
-/* DIV LISTA -- AREA DE CONTACTOS */
-.contactos__list__images--format{
-    
-    width: 1em;
-    height: 1em;
+/* DIV LIST -- AREA DE CONTACTOS */
+.contactos__body--format--color{
+    overflow: hidden;
+    position: sticky;
+    bottom: 0em;
+    width: fit-content;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 0.8em;
+    border-radius: 150px 150px 0px 0px;
+}
+.contactos__list__images--size{
+    width: 3em;
+    height: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    transition: all 0.7s;
+}
+.contactos__list__images--size:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0.7s;
+}
+.contactos__list__item--format{
+    display: inline-block;
+    position: sticky;
 }
 .contactos__list--none{
     list-style: none;
+    margin: auto;
+    text-align: center;
+    padding: 0%;
+}
+/* NAV -- AREA DE MENUS Y NAVEGACION */
+.navegacion--flex-container--padding {
+    text-align: center;
+    list-style-type: none;
+    font-weight: bold;
+    
+    /* FLEXBOX */
+    display: flex;
+    justify-content: center;
+}
+.navegacion--flex-container--padding > li {
+    padding: 1em 2em;
+    transition:all 1s;
+}
+.navegacion--flex-container--padding > li:hover {
+    transition:all 1s;
+    transform:scale(1.2,1.2);
+}
+.navegacion__logo--display-absolute{
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    top: 3%;
+    left: 5%;
 }
 
-/* Probando el commit de GIT */
+/* CONTACTO - GRIDS */
+.form--diplayGrid{
+    height: 50em;
+    display: grid;
+    padding: 0% 15%;
+    grid-template-areas: 
+    "nomApe nomApe com"
+    "tel tel com"
+    "mail serv img"
+    "mailSi btn btn";
+    grid-template-columns: 25% 20% 30%;
+    grid-template-rows: 25% 25% 25% 25%;
+    justify-content: space-evenly;
+}
+.form--diplayGrid > div > * {
+    display: block;
+    width: 100%;
+}
+.form--diplayGrid > div > input, .form--diplayGrid > div > select{
+    font-size: larger;
+}
+label{
+    font-size: xx-large;
+}
+.nomApe{    
+    grid-area: nomApe;
+    
+}
+.tel{
+    grid-area: tel;
+}
+.mail{
+    grid-area: mail;
+}
+.mailSign{
+    grid-area: mailSi;
+}
+.mailSign > label{
+    font-size: larger;
+}
+.serv{
+    grid-area: serv;
+}
+.img{
+    grid-area: img;
+}
+.com{
+    grid-area: com;
+}
+.com > textarea{
+    font-size: x-large;
+}
+.btn{
+    grid-area: btn;
+}
+.btn > input{
+    height: 50%;
+    width: 49%;
+    display: inline-block;
+    font-size: xx-large;
+}
+/* FOOTER FLEXBOX */
+.footer--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2em;
+    align-items: center;
+}
+.footer--flex > div{
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+/* MEDIA QUERIES */
+    /* PARA CELULAR */
+@media screen and (max-width:414px) {
+    *{
+        font-size: large;
+    }
+    .navegacion--flex-container--padding {
+        text-align: center;
+        list-style-type: none;
+        font-weight: bold;
+        
+        /* FLEXBOX */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .navegacion__logo--display-absolute{
+        display: none;
+    }
+    .contactos__list__images--size{
+        width: 2em;
+        height: 2em;
+        margin-left: 1.3em;
+        margin-right: 1.3em;
+    }
+    .form--diplayGrid{
+        height: 50em;
+        display: grid;
+        grid-template-areas: 
+        "nomApe"
+        "tel"
+        "mail"
+        "img"
+        "com"
+        "mailSi"
+        "serv"
+        "btn";
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 10% 10% 10% 16% 10% 8% 10%;
+        justify-content: space-evenly;
+    }
+    .form--diplayGrid > div > * {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .form--diplayGrid > div > input, .form--diplayGrid > div > select{
+        font-size: medium;
+    }
+    label{
+        font-size: medium;
+    }
+    .nomApe{    
+        grid-area: nomApe;
+        
+    }
+    .tel{
+        grid-area: tel;
+    }
+    .mail{
+        grid-area: mail;
+    }
+    .mailSign{
+        grid-area: mailSi;
+    }
+    .mailSign > label{
+        font-size: medium;
+    }
+    .serv{
+        grid-area: serv;
+    }
+    .img{
+        grid-area: img;
+    }
+    .com{
+        grid-area: com;
+    }
+    .com > textarea{
+        font-size: small;
+    }
+    .btn{
+        grid-area: btn;
+    }
+    .btn > input{
+        height: 50%;
+        width: 49%;
+        display: inline-block;
+        font-size: medium;
+    }
+}

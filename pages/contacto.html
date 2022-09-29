@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- FAVICON -->
+    <!-- The emoji graphics are from the open source project Twemoji. The graphics are copyright 2020 Twitter, Inc and other contributors. The graphics are licensed under CC-BY 4.0. -->
+    <link rel="icon" type="image/x-icon" href="/resources/favicon/favicon-32x32.png">
 </head>
 <body class="body--backgroudColorAlternative">
     <!-- LOGO Y NAVEGACION -->
-    <header>
+    <header class="header--center">
+        <h1 class="header__h1--size--center">Contacto</h1>
         <nav>
-            <a href="../index.html">
-                <img src="" alt="Logotipo">
+            <a class="navegacion__logo--display-absolute" href="../index.html">
+                <img src="../images/imglogo.png" alt="Logotipo">
             </a>
-            <ul>
+            <ul class="navegacion--flex-container--padding">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../index.html#sobre">Sobre</a></li>
                 <li><a href="./piezas/home-piezas.html">Piezas</a></li>
@@ -24,38 +28,54 @@
             </ul>
         </nav>
     </header>
-    <h1>Contacto</h1>
     <form action="">
-        <fieldset>
-            <legend>Formulario</legend>
+        <fieldset class="form--diplayGrid">
+            <legend>Datos de Contacto</legend>
             <!-- Nombre -->
-            <label for="nombreApellido">Nombre y apellido</label>
-            <input type="text" id="nombreApellido" name="nombreApellido" placeholder="Escribir Aqui">
+            <div class="nomApe">
+                <label for="nombreApellido">Nombre y apellido</label>
+                <input type="text" id="nombreApellido" name="nombreApellido" placeholder="Escribir Aqui">
+            </div>
             <!-- Telefono -->
-            <label for="telefono">Telefono</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="+549-11-1111-1111">
+            <div class="tel">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+549-11-1111-1111">
+            </div>
             <!-- Correo -->
-            <label for="mail">Correo Electrónico</label>
-            <input type="email" id="mail" name="mail" placeholder="correo@mail.com">
-            <label for="mailSignup">¿Queres recibir notificaciones sobre otros proyectos?</label>
-            <input type="checkbox" id="mailSignup">
+            <div class="mail">
+                <label for="mail">Correo Electrónico</label>
+                <input type="email" id="mail" name="mail" placeholder="correo@mail.com">
+            </div>
+            <div class="mailSign">
+                <label for="mailSignup"><b>¿Queres recibir notificaciones sobre otros proyectos?</b></label>
+                <input type="checkbox" id="mailSignup">
+            </div>
             <!-- Servicio -->
-            <label for="servicios">Servicios</label>
-            <select name="servicios" id="servicios">
-                <option value="servicio1">servicio1</option>
-                <option value="servicio2">servicio2</option>
-                <option value="servicio3">servicio3</option>
-            </select>
+            <div class="serv">
+                <label for="servicios">Servicios</label>
+                <select name="servicios" id="servicios">
+                    <option value="servicio1">servicio1</option>
+                    <option value="servicio2">servicio2</option>
+                    <option value="servicio3">servicio3</option>
+                </select>
+            </div>
             <!-- Imagenes -->
-            <label for="imagen">Imagen de Referencia</label>
-            <input type="file" id="imagen" name="imagen">
+            <div class="img">
+                <label for="imagen">Imagen de Referencia</label>
+                <input type="file" id="imagen" name="imagen">
+            </div>
             <!-- Comentarios -->
-            <label for="comentarios">Comentarios</label>
-            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Ingresar notas adicionales para la pieza"></textarea>
-            <!-- Btn Enviar -->
-            <input type="submit" value="Enviar">
-            <!-- Btn Borrar -->
-            <input type="submit" value="Borrar">
+            <div class="com">
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Ingresar notas adicionales para la pieza"></textarea>
+            </div>
+            <!-- Btn Enviar y borrar -->
+            <div class="btn">
+                <!-- Btn Enviar -->
+                <input id="btnEnviar" type="submit" value="Enviar">
+                <!-- Btn Borrar -->
+                <input id="btnBorrar" type="submit" value="Borrar">
+            </div>
         </fieldset>
     </form>
 </body>

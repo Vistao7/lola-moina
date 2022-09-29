@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lola Moina Joyeria</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- FAVICON -->
+    <!-- The emoji graphics are from the open source project Twemoji. The graphics are copyright 2020 Twitter, Inc and other contributors. The graphics are licensed under CC-BY 4.0. -->
+    <link rel="icon" type="image/x-icon" href="/resources/favicon/favicon-32x32.png">
 </head>
 <body>
     <!-- LOGO Y NAVEGACION -->
     <header class="header--center">
         <nav>
-            <a href="#">
-                <img src="" alt="Logotipo">
+            <a class="navegacion__logo--display-absolute" href="#">
+                <img src="./images/imglogo.png" alt="Logotipo">
             </a>
             <h1 class="header__h1--fontFamily">Lola Moina <br> Joyeria</h1>
-            <ul class="header__list--none--bold">
+            <ul class="navegacion--flex-container--padding">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="./pages/piezas/home-piezas.html">Piezas</a></li>
@@ -38,27 +41,32 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis enim reprehenderit reiciendis modi quasi qui, necessitatibus amet dolores molestiae dolorum illum totam fuga libero veniam officia. Quam eos blanditiis iure!</p>
     </section>
     <!-- AREA DE CONTACTOS RRSS (WPP, MAIL, INSTA, ETC) -->
-    <div>
-        <ul>
-            <li class="contactos__list__images--format">
-                <img src="./resources/interface-icons/facebook.svg" alt="Facebook">
+    <div class="contactos__body--format--color">
+        <ul class="contactos__list--none">
+            <li class="contactos__list__item--format">
+                <!-- MAIL PREDEFINIDO -->
+                <a href="mailto:fermoina@hotmail.com?
+                subject=Consulta&body=¡Hola!%0D%0A¡Me%20gustoria%20hacer%20una%20consulta%20por%20una%20pieza!">
+                <img class="contactos__list__images--size" src="./resources/interface-icons/sobre.svg" alt="mail"></a>
             </li>   
-            <li class="contactos__list__images--format">
-                <a href="#telefono"><img src="./resources/interface-icons/llamada-telefonica.svg" alt="Telefono"></a>
+            <li class="contactos__list__item--format">
+                <a href="#telefono"><img class="contactos__list__images--size" src="./resources/interface-icons/llamada-telefonica.svg" alt="Telefono"></a>
             </li>
-            <li class="contactos__list__images--format">
-                <a href="https://www.instagram.com/lola.moina/"><img src="./resources/interface-icons/instagram.svg" alt="Instagram"></a>
+            <li class="contactos__list__item--format">
+                <a href="https://www.instagram.com/lola.moina/" target="_blank"><img class="contactos__list__images--size" class="contactos__list__images--size" src="./resources/interface-icons/instagram.svg" alt="Instagram"></a>
             </li>
-            <li class="contactos__list__images--format">
-                <a href="https://wa.me/"><img src="./resources/interface-icons/whatsapp.svg" alt="Whatsapp"></a>
+            <li class="contactos__list__item--format">
+                <a href="https://wa.me/" target="_blank"><img class="contactos__list__images--size" src="./resources/interface-icons/whatsapp.svg" alt="Whatsapp"></a>
             </li>
         </ul>
     </div>
     <!-- FOOTER CON DATOS DE CONTACTO -->
-    <footer>
-        <label for="mail">Signup</label>
-        <input type="email" id="mail" name="mail" placeholder="correo@mail.com">
-        <input type="submit" value="Registrar">
+    <footer class="footer--flex">
+        <div class="footer--flex">
+            <label for="mail">Signup</label>
+            <input type="email" id="mail" name="mail" placeholder="correo@mail.com">
+            <input type="submit" value="Registrar">
+        </div>
         <p>Contacto</p>
         <ul class="footer__list--none">
             <li id="telefono">11-1111-1111</li>
