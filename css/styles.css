@@ -122,17 +122,16 @@ header{
     overflow: hidden;
     position: sticky;
     bottom: 0em;
-    width: fit-content;
+    height: 10%;
+    width: 70vmin;
     margin: auto;
     background-color: #ffffff;
     padding: 0.8em;
     border-radius: 150px 150px 0px 0px;
 }
 .contactos__list__images--size{
-    width: 3em;
-    height: 3em;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin: 0% 6% 0% 6%;
+    width: 7vmin;
     transition: all 0.7s;
 }
 .contactos__list__images--size:hover{
@@ -140,7 +139,7 @@ header{
     transition: all 0.7s;
 }
 .contactos__list__item--format{
-    display: inline-block;
+    display: inline;
     position: sticky;
 }
 .contactos__list--none{
@@ -312,16 +311,6 @@ label{
         display: flex;
         margin: 1.5em 0em;
         width: 100%;
-    }
-    .contactos__body--format--color {
-        width: auto;
-    }
-    .contactos__list__item--format {
-        display: inline;
-    }
-    .contactos__list__images--size {
-        margin: 0% 6% 0% 6%;
-        width: 10%;
     }
     .form--diplayGrid{
         height: 50em;
