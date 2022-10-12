@@ -1,0 +1,10 @@
+.contactos{
+    &--format--color{
+        position: sticky;
+        bottom: 0vmin;
+        background-color: white;
+    }
+    &__list{
+        display: inline-block;
+    }
+}

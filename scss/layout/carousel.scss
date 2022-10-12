@@ -1,0 +1,8 @@
+.carousel{
+    &__image{
+        &--size{
+            height: 50vmin;
+            width: 50vmin;
+        }
+    }
+}

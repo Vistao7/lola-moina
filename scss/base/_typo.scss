@@ -1,0 +1,27 @@
+/* FONTS */
+    /* Tangerine (uso en logo) */
+@font-face {
+    font-family: "Tangerine";
+    src: url(../fonts/Tangerine_Regular.ttf);
+}
+    /* Unna Italic (Uso en titulos) */
+@font-face {
+    font-family: "Unna Italic";
+    src: url(../fonts/Unna-Italic.ttf);
+}
+    /* SourceSansPro (Para uso en el contenido) */
+@font-face {
+    font-family: "SourceSansPro Light";
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+@font-face {
+    font-family: "SourceSansPro Light Italic";
+    src: url(../fonts/SourceSansPro-LightItalic.ttf);
+}
+@font-face {
+    font-family: "SourceSansPro Regular";
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+*{
+    font-family: SourceSansPro Light;
+}

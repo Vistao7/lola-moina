@@ -1,0 +1,16 @@
+.header__nav{
+    &--flex{
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+    }
+    &__items--animate{
+        li{
+            transition: all 0.6s;
+        }
+        & li:hover{
+            transform: scale(1.2,1.2);
+        }
+    }
+}
