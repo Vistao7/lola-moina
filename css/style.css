@@ -2,6 +2,7 @@
 /* Color de header */
 /* Color de footer */
 /* Color de nav*/
+/* Color de carousel */
 /* FONTS */
 /* Tangerine (uso en logo) */
 @font-face {
@@ -97,6 +98,47 @@ body {
       transform: scale(1.1, 1.1);
       transition: all 0.7s; }
 
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23191818' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important; }
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23191818' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important; }
+
 .carousel__image--size {
   height: 75vmin;
   width: 75vmin; }
+
+.carousel--color {
+  background-color: #fcf6f1; }
+
+.footer--flex--color {
+  background: #ddf1ff;
+  background: linear-gradient(0deg, #ddf1ff 0%, #ddf1ff 50%, #eaf6ff 75%, #f7fbff 90%, white 100%);
+  padding: 5vmin 5vmin 0vmin;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .footer--flex--color a {
+    text-decoration: none; }
+
+.footer__container--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5vmin; }
+  .footer__container--flex div {
+    flex: 1 1 50%; }
+    .footer__container--flex div p {
+      margin-bottom: 0; }
+    .footer__container--flex div ul {
+      list-style-type: none;
+      margin-bottom: 0; }
+  .footer__container--flex div:nth-child(2) {
+    text-align: right; }
+
+.footer__container__item--flex {
+  display: flex;
+  justify-content: space-between;
+  word-spacing: 2px;
+  letter-spacing: -1px;
+  font-size: 14px; }

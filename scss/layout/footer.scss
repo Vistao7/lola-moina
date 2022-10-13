@@ -1,0 +1,42 @@
+.footer{
+    &--flex--color{
+        @include bg-color($footer-base, $footer-gradient);
+        padding: 5vmin 5vmin 0vmin;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        a{
+            text-decoration: none;
+        }
+    }
+    &__container{
+        &--flex{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 5vmin;
+            div{
+                flex: 1 1 50%;
+                p{
+                    margin-bottom: 0;
+                }
+                ul{
+                    list-style-type: none;
+                    margin-bottom: 0;
+                }
+            }
+            div:nth-child(2){
+                
+                text-align: right;
+            }
+        }
+        &__item--flex{
+            display: flex;
+            justify-content: space-between;
+            word-spacing: 2px;
+            letter-spacing: -1px;
+            font-size: 14px;
+
+        }
+    }
+}
