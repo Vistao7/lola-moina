@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header--center">
+    <header class="header--center--color">
         <h1 id="title" class="header__title--size--font">Lola Moina<br>Joyeria</h1>
         <a href="#title" class="header__logo--posAbsolute">
             <img src="./images/imglogo.png" alt="Logotipo">
@@ -27,7 +27,7 @@
     </header>
     <main>
         <!-- NAVBAR CON BOOTSTRAP -->
-        <nav class="navbar sticky-top navbar-expand-sm bg-light">
+        <nav class="navbar sticky-top navbar-expand-sm header__nav--color">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -60,18 +60,18 @@
         <div id="carouselExampleControls" class="carousel slide bg-dark my-5 container-md mx-auto" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <figure class="d-block mx-auto px-5 py-5 figure">
-                    <img src="./images/img10.jpeg" class="figure-img rounded-5 mx-auto d-block w-50 " alt="...">
+                <figure class="d-block mx-auto py-5 figure">
+                    <img src="./images/img10.jpeg" class="figure-img rounded-5 mx-auto d-block carousel__image--size" alt="...">
                     <figcaption class="figure-caption text-center">blebleble</figcaption>
                 </figure>              </div>
               <div class="carousel-item">
                 <figure class="d-block mx-auto py-5 figure">
-                    <img src="./images/img11.jpeg" class="figure-img rounded-5 mx-auto d-block w-50" alt="...">
+                    <img src="./images/img11.jpeg" class="figure-img rounded-5 mx-auto d-block carousel__image--size" alt="...">
                     <figcaption class="figure-caption text-center">blebleble</figcaption>
                 </figure>              </div>
               <div class="carousel-item">
                 <figure class="d-block mx-auto py-5 figure">
-                    <img src="./images/img12.jpeg" class="figure-img rounded-5 mx-auto d-block w-50" alt="...">
+                    <img src="./images/img12.jpeg" class="figure-img rounded-5 mx-auto d-block carousel__image--size" alt="...">
                     <figcaption class="figure-caption text-center">blebleble</figcaption>
                 </figure>
               </div>
@@ -95,16 +95,16 @@
                 </figcaption>
             </figure>
         </div>
-    </main>
-    <footer>
         <div class="contactos--format--color">
-            <ul>
+            <ul class="contactos__list--flex">
                 <li><a href=""><img src="./images/icons/sobre.svg" alt="Mail"></a></li>
                 <li><a href=""><img src="./images/icons/llamada-telefonica.svg" alt="Telefono"></a></li>
                 <li><a href=""><img src="./images/icons/instagram.svg" alt="Instagram"></a></li>
                 <li><a href=""><img src="./images/icons/whatsapp.svg" alt="Whatsapp"></a></li>
             </ul>
         </div>
+    </main>
+    <footer>
         <div>
             <label for="mailSignup">Suscripción a Correo</label>
             <input type="email" name="mailSignup" id="mailSignup" placeholder="Correo@mail.com">
@@ -124,6 +124,9 @@
                 <li>Sitemap</li>
                 <li>Placeholder</li>
             </ul>
+        </div>
+        <div>
+            <p>Website created by Matias Delgado<br>Lola Moina Joyeria. All rights reserved.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

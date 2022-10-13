@@ -1,3 +1,7 @@
+/* Color de body */
+/* Color de header */
+/* Color de footer */
+/* Color de nav*/
 /* FONTS */
 /* Tangerine (uso en logo) */
 @font-face {
@@ -30,13 +34,22 @@
   padding: 0;
   box-sizing: border-box; }
 
-.header--center {
-  text-align: center; }
+body {
+  background-color: #fcf6f1; }
+
+.body--bgColorAlt body {
+  background-color: #fdfaf7; }
+
+.header--center--color {
+  text-align: center;
+  background: #ddf1ff;
+  background: linear-gradient(180deg, #ddf1ff 0%, #ddf1ff 50%, #eaf6ff 75%, #f7fbff 90%, white 100%); }
 
 .header__title--size--font {
   font-family: "Tangerine";
   font-size: 10vmin;
-  padding: 5vmin 0; }
+  padding: 5vmin 0;
+  margin: 0; }
 
 .header__logo--posAbsolute {
   position: absolute;
@@ -56,14 +69,34 @@
 .header__nav__items--animate li:hover {
   transform: scale(1.2, 1.2); }
 
+.header__nav--color {
+  background: white;
+  background: linear-gradient(180deg, white 0%, white 75%, rgba(255, 255, 255, 0.8) 90%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0) 100%); }
+
 .contactos--format--color {
   position: sticky;
   bottom: 0vmin;
-  background-color: white; }
+  height: 10%;
+  width: 70vmin;
+  margin: auto;
+  background-color: white;
+  padding: 0.8em;
+  border-radius: 150px 150px 0 0; }
 
-.contactos__list {
-  display: inline-block; }
+.contactos__list--flex {
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none; }
+  .contactos__list--flex > li img {
+    margin: 0% 6% 0% 6%;
+    width: 7vmin;
+    transition: all 0.7s; }
+    .contactos__list--flex > li img:hover {
+      transform: scale(1.1, 1.1);
+      transition: all 0.7s; }
 
 .carousel__image--size {
-  height: 50vmin;
-  width: 50vmin; }
+  height: 75vmin;
+  width: 75vmin; }

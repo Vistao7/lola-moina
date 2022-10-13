@@ -1,11 +1,13 @@
 .header{
-    &--center{
+    &--center--color{
         text-align: center;
+        @include bg-color($header-base, $header-gradient);
     }
     &__title--size--font{
         font-family: "Tangerine";
         font-size: 10vmin;
         padding: 5vmin 0;
+        margin: 0;
     }
     &__logo--posAbsolute{
         position: absolute;
@@ -16,4 +18,5 @@
             height: 10vmin;
         }
     }
+
 }

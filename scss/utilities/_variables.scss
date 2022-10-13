@@ -1,0 +1,12 @@
+/* Color de body */
+$color-base: #fcf6f1;
+$color-base-alternativo: #fdfaf7;
+/* Color de header */
+$header-base: rgb(221,241,255);
+$header-gradient: linear-gradient(180deg, rgba(221,241,255,1) 0%, rgba(221,241,255,1) 50%, rgba(234,246,255,1) 75%, rgba(247,251,255,1) 90%, rgba(255,255,255,1) 100%);
+/* Color de footer */
+$footer-base: rgb(221,241,255);
+$footer-gradient: linear-gradient(0deg, rgba(221,241,255,1) 0%, rgba(221,241,255,1) 50%, rgba(234,246,255,1) 75%, rgba(247,251,255,1) 90%, rgba(255,255,255,1) 100%);
+/* Color de nav*/
+$nav-base: rgb(255,255,255);
+$nav-gradient: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0.8) 90%, rgba(255,255,255,0.5) 95%, rgba(255,255,255,0) 100%);

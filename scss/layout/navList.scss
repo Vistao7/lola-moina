@@ -13,4 +13,7 @@
             transform: scale(1.2,1.2);
         }
     }
+    &--color{
+        @include bg-color($nav-base,$nav-gradient)
+    }
 }

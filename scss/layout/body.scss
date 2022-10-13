@@ -1,0 +1,10 @@
+body{
+    background-color: $color-base;
+}
+.body{
+    &--bgColorAlt{
+        body{
+            background-color: $color-base-alternativo;
+        }
+    }
+}
