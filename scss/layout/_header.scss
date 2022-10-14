@@ -8,6 +8,12 @@
         font-size: 10vmin;
         padding: 5vmin 0;
         margin: 0;
+        &--alternative{
+            font-family: "Unna Italic";
+            font-size: 8vmin;
+            padding: 5vmin 0;
+            margin: 0;
+        }
     }
     &__logo--posAbsolute{
         position: absolute;

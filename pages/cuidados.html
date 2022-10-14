@@ -6,8 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Description de Cuidados a tener con las piezas para emprendimiento de joyeria, joyas en oro, plata, cristal y demas, joyas a medida">
     <title>Cuidados | Lola Moina Joyeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
+    <header class="header--center--color">
+        <h1  class="header__title--size--font--alternative">Cuidados</h1>
+        <a href="../index.html#title" class="header__logo--posAbsolute">
+            <img src="../images/imglogo.png" alt="Logotipo">
+        </a>
+    </header>
+    <main>
+        <!-- NAVBAR CON BOOTSTRAP -->
+        <nav class="navbar sticky-top navbar-expand-sm header__nav--color">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../index.html#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./home-piezas.html">Piezas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Cuidados</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./faq.html">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="contactos--format--color">
+            <ul class="contactos__list--flex">
+                <li><a href=""><img src="../images/icons/sobre.svg" alt="Mail"></a></li>
+                <li><a href=""><img src="../images/icons/llamada-telefonica.svg" alt="Telefono"></a></li>
+                <li><a href=""><img src="../images/icons/instagram.svg" alt="Instagram"></a></li>
+                <li><a href=""><img src="../images/icons/whatsapp.svg" alt="Whatsapp"></a></li>
+            </ul>
+        </div>
+    </main>
+    <footer class="footer--flex--color">
+        <div id="mailSignupBox">
+            <label for="mailSignup">Suscripción a Correo</label>
+            <input type="email" name="mailSignup" id="mailSignup" placeholder="Correo@mail.com">
+            <input type="submit" value="Registrar">
+            <input type="submit" value="Borrar">
+        </div>
+        <div class="footer__container--flex">
+            <div>
+                <p>Contacto</p>
+                <ul>
+                    <li>11-1111-1111</li>
+                    <li>placeholder@mail.com</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Placeholder</a></li>
+                </ul>
+            </div>
+            <div class="footer__container__item--flex">
+                <p>Website created by <a href="https://github.com/Vistao7">Matias Delgado</a></p> 
+                <p>Lola Moina Joyeria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
