@@ -1,0 +1,71 @@
+.form{
+    &--grid{
+        padding: 0% 20vmin;
+        margin: 5vmin 0 15vmin 0;
+        ;
+        fieldset{
+            display: grid;
+            grid-template-areas: 
+            "nomApe nomApe com"
+            "tel tel com"
+            "mail mail img"
+            "serv mailSi mailSi"
+            "btn btn btn";
+            grid-template-columns: 20% 20% 35%;
+            grid-template-rows: 20% 20% 20% 20% 20%;
+            gap: 5vmin;
+            justify-content: space-between;
+            height: 40em;
+            div > * {
+                display: block;
+                width: 100%;
+                input, select{
+                    font-size: large;
+                }
+            }
+        }
+        #nomApe{
+            grid-area: nomApe;
+        }
+        #com{
+            grid-area: com;
+        }
+        #tel{
+            grid-area: tel;
+        }
+        #mail{
+            grid-area: mail;
+        }
+        #serv{
+            grid-area: serv;
+        }
+        #img{
+            grid-area: img;
+        }
+        #mailSi{
+            grid-area: mailSi;
+        }
+        #btn{
+            grid-area: btn;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            input{
+                width: 33%;
+                height: 33%;
+            }
+        }
+    }
+    &__input--flex{
+        display: flex;
+        align-items: flex-start;
+        label{
+            flex: 3;
+        }
+        input{
+            flex: 1;
+            height: 30px;
+
+        }   
+    }
+}

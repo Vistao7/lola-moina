@@ -170,3 +170,51 @@ body {
       margin: 5vmin 0vmin 5vmin 10vmin;
       border-radius: 35px 0px 0px 35px;
       padding: 3vmin; }
+
+.form--grid {
+  padding: 0% 20vmin;
+  margin: 5vmin 0 15vmin 0; }
+  .form--grid fieldset {
+    display: grid;
+    grid-template-areas: "nomApe nomApe com" "tel tel com" "mail mail img" "serv mailSi mailSi" "btn btn btn";
+    grid-template-columns: 20% 20% 35%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    gap: 5vmin;
+    justify-content: space-between;
+    height: 40em; }
+    .form--grid fieldset div > * {
+      display: block;
+      width: 100%; }
+      .form--grid fieldset div > * input, .form--grid fieldset div > * select {
+        font-size: large; }
+  .form--grid #nomApe {
+    grid-area: nomApe; }
+  .form--grid #com {
+    grid-area: com; }
+  .form--grid #tel {
+    grid-area: tel; }
+  .form--grid #mail {
+    grid-area: mail; }
+  .form--grid #serv {
+    grid-area: serv; }
+  .form--grid #img {
+    grid-area: img; }
+  .form--grid #mailSi {
+    grid-area: mailSi; }
+  .form--grid #btn {
+    grid-area: btn;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around; }
+    .form--grid #btn input {
+      width: 33%;
+      height: 33%; }
+
+.form__input--flex {
+  display: flex;
+  align-items: flex-start; }
+  .form__input--flex label {
+    flex: 3; }
+  .form__input--flex input {
+    flex: 1;
+    height: 30px; }
