@@ -1,8 +1,12 @@
+/* UTILITIES */
 @import "./utilities/function";
 @import "./utilities/mixins";
 @import "./utilities/variables";
+/* BASE */
 @import "./base/typo";
 @import "./base/reset";
+/* COMPONENTS */
+/* LAYOUT */
 @import "./layout/body";
 @import "./layout/header";
 @import "./layout/navList";
@@ -11,3 +15,4 @@
 @import "./layout/index";
 @import "./layout/faq";
 @import "./layout/contacto";
+@import "./layout/piezas";

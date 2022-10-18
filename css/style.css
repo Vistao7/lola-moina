@@ -1,8 +1,10 @@
+/* UTILITIES */
 /* Color de body */
 /* Color de header */
 /* Color de footer */
 /* Color de nav*/
 /* Color de carousel */
+/* BASE */
 /* FONTS */
 /* Tangerine (uso en logo) */
 @font-face {
@@ -35,6 +37,8 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* COMPONENTS */
+/* LAYOUT */
 body {
   background-color: #fcf6f1; }
 
@@ -218,3 +222,26 @@ body {
   .form__input--flex input {
     flex: 1;
     height: 30px; }
+
+.piezas__container--flex {
+  padding: 5vmin 15vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .piezas__container--flex article {
+    flex-grow: 1;
+    height: 45vmin;
+    width: 35vmin;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vmin; }
+    .piezas__container--flex article figure {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+    .piezas__container--flex article figure > img {
+      margin: auto;
+      height: 80%;
+      border-radius: 15px; }
+    .piezas__container--flex article figure > figcaption {
+      text-align: center; }
