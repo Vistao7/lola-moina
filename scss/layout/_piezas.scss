@@ -1,29 +1,51 @@
-.piezas__container{
-    &--flex{
-        padding: 5vmin 15vmin;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        article{
-            flex-grow: 1;
-            height: 45vmin;
-            width: 35vmin;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 5vmin;
-            figure{
-                display: flex;
-                justify-content: center;
-                flex-direction: column
-            }
-            figure > img{
-                margin: auto;
-                height: 80%;
-                border-radius: 15px;
-            }
-            figure > figcaption{
-                text-align: center;
+.piezas__container--flex{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    &--card{
+        @extend .piezas__container--flex;
+        figure {
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: 270px 150px;
+            grid-template-areas: "imagen" "texto";
+
+            border-radius: 18px;
+            background-color: white;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            margin: 25px 30px;
+            transition: all 0.7s;
+            &:hover{
+                transform: scale(1.1, 1.1);
+                div{
+                    transform: scale(0.95);
+                    background-size: 130%;
+                }
             }
         }
+        figure > div {
+            grid-area: imagen;
+            transition: all 0.7s;
+            }
+        }
+        figure > figcaption {
+            grid-area: texto;
+
+    }
+}
+
+@for $i from 1 through 10 {
+    .img-#{$i}{
+        background: url(../images/imgp#{$i}.jpg);
+        background-size: 100%;
+        border-radius: 18px 18px 18px 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-size 2s ease;
     }
 }

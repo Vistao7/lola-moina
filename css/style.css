@@ -4,6 +4,7 @@
 /* Color de footer */
 /* Color de nav*/
 /* Color de carousel */
+/* Color de piezas */
 /* BASE */
 /* FONTS */
 /* Tangerine (uso en logo) */
@@ -223,25 +224,112 @@ body {
     flex: 1;
     height: 30px; }
 
-.piezas__container--flex {
-  padding: 5vmin 15vmin;
+.piezas__container--flex, .piezas__container--flex--card {
+  width: 100vw;
+  height: auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .piezas__container--flex article {
-    flex-grow: 1;
-    height: 45vmin;
-    width: 35vmin;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5vmin; }
-    .piezas__container--flex article figure {
-      display: flex;
-      justify-content: center;
-      flex-direction: column; }
-    .piezas__container--flex article figure > img {
-      margin: auto;
-      height: 80%;
-      border-radius: 15px; }
-    .piezas__container--flex article figure > figcaption {
-      text-align: center; }
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap; }
+  .piezas__container--flex--card figure {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 270px 150px;
+    grid-template-areas: "imagen" "texto";
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 25px 30px;
+    transition: all 0.7s; }
+    .piezas__container--flex--card figure:hover {
+      transform: scale(1.1, 1.1); }
+      .piezas__container--flex--card figure:hover div {
+        transform: scale(0.95);
+        background-size: 130%; }
+  .piezas__container--flex--card figure > div {
+    grid-area: imagen;
+    transition: all 0.7s; }
+  .piezas__container--flex figure > figcaption, .piezas__container--flex--card figure > figcaption {
+    grid-area: texto; }
+
+.img-1 {
+  background: url(../images/imgp1.jpg);
+  background-size: 100%;
+  border-radius: 18px 18px 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 2s ease; }
+
+.img-2 {
+  background: url(../images/imgp2.jpg);
+  background-size: 100%;
+  border-radius: 18px 18px 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 2s ease; }
+
+.img-3 {
+  background: url(../images/imgp3.jpg);
+  background-size: 100%;
+  border-radius: 18px 18px 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 2s ease; }
+
+.img-4 {
+  background: url(../images/imgp4.jpg);
+  background-size: 100%;
+  border-radius: 18px 18px 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 2s ease; }
+
+.img-5 {
+  background: url(../images/imgp5.jpg);
+  background-size: 100%;
+  border-radius: 18px 18px 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 2s ease; }
+
+.img-6 {
+  background: url(../images/imgp6.jpg);
+  background-size: 100%;
+  border-radius: 18px 18px 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 2s ease; }
+
+.img-7 {
+  background: url(../images/imgp7.jpg);
+  background-size: 100%;
+  border-radius: 18px 18px 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 2s ease; }
+
+.img-8 {
+  background: url(../images/imgp8.jpg);
+  background-size: 100%;
+  border-radius: 18px 18px 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 2s ease; }
+
+.img-9 {
+  background: url(../images/imgp9.jpg);
+  background-size: 100%;
+  border-radius: 18px 18px 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 2s ease; }
+
+.img-10 {
+  background: url(../images/imgp10.jpg);
+  background-size: 100%;
+  border-radius: 18px 18px 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 2s ease; }
