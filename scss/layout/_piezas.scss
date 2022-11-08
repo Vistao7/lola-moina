@@ -35,10 +35,12 @@
         }
         figure > figcaption {
             grid-area: texto;
+            padding: 50px 50px 0px;
 
     }
 }
-
+/* Esto controla las imagenes y las aplica como un background image para conseguir el efecto deseado (zoom rapido en "imagen") */
+/* Soluciona el problema de distintos tamaños de imagenes, auto centrandolos y creando un tamaño uniforme conservando buena calidad de la imagen */
 @for $i from 1 through 10 {
     .img-#{$i}{
         background: url(../images/imgp#{$i}.jpg);
@@ -47,5 +49,20 @@
         background-repeat: no-repeat;
         background-position: center;
         transition: background-size 2s ease;
+    }   
+}
+
+@media (min-width: 992px) {
+    .piezas__container--flex--card{
+        figure {
+            grid-template-columns: 400px;
+            grid-template-rows: 370px 150px ;
+        }
+        figure > figcaption {
+            font-size: large;
+            font-weight: 600;
+            letter-spacing: 3px;
+            word-spacing: 2px;
+        }
     }
 }

@@ -26,3 +26,11 @@
     }
 
 }
+
+@media (min-width: 992px) {
+    .header{
+        &__title--size--font{
+            font-size: 6vmin;
+        }
+    }
+}

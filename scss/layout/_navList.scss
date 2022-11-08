@@ -1,19 +1,16 @@
 .header__nav{
-    &--flex{
-        ul{
-            list-style-type: none;
-            display: flex;
-        }
-    }
-    &__items--animate{
-        li{
-            transition: all 0.6s;
-        }
-        & li:hover{
-            transform: scale(1.2,1.2);
-        }
-    }
+    font-size: large;
     &--color{
-        @include bg-color($nav-base,$nav-gradient)
+        @extend .header__nav;
+        @include bg-color($nav-base,$nav-gradient);
+    }
+}
+
+@media (min-width: 992px) {
+    .header__nav{
+        font-size: x-large;
+        ul > li {
+            padding: 0% 3vmin;
+        }
     }
 }

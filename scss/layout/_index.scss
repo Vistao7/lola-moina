@@ -16,4 +16,16 @@
     &--color{
         background-color: $color-base;
     }
+    &__title--center{
+        text-align: center;
+        margin-top: 5vmin;
+        font-weight: 600;
+        letter-spacing: 1vmin;
+        word-spacing: 3vmin;
+    }
+}
+.carousel-item{
+    figure > figcaption {
+        font-size: x-large;
+    }
 }

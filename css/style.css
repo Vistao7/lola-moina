@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* UTILITIES */
 /* Color de body */
 /* Color de header */
@@ -70,25 +71,27 @@ body {
     width: 10vmin;
     height: 10vmin; }
 
-.header__nav--flex ul {
-  list-style-type: none;
-  display: flex; }
+@media (min-width: 992px) {
+  .header__title--size--font {
+    font-size: 6vmin; } }
 
-.header__nav__items--animate li {
-  transition: all 0.6s; }
+.header__nav, .header__nav--color {
+  font-size: large; }
+  .header__nav--color {
+    background: white;
+    background: linear-gradient(180deg, white 0%, white 75%, rgba(255, 255, 255, 0.8) 90%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0) 100%); }
 
-.header__nav__items--animate li:hover {
-  transform: scale(1.2, 1.2); }
-
-.header__nav--color {
-  background: white;
-  background: linear-gradient(180deg, white 0%, white 75%, rgba(255, 255, 255, 0.8) 90%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0) 100%); }
+@media (min-width: 992px) {
+  .header__nav, .header__nav--color {
+    font-size: x-large; }
+    .header__nav ul > li, .header__nav--color ul > li {
+      padding: 0% 3vmin; } }
 
 .contactos--format--color {
   position: sticky;
   bottom: 0vmin;
-  height: 10%;
-  width: 70vmin;
+  height: 10vmin;
+  width: 80vmin;
   margin: auto;
   background-color: white;
   padding: 0.8em;
@@ -101,12 +104,19 @@ body {
   justify-content: space-evenly;
   list-style-type: none; }
   .contactos__list--flex > li img {
-    margin: 0% 6% 0% 6%;
+    margin: 0% 5% 0% 5%;
     width: 7vmin;
     transition: all 0.7s; }
     .contactos__list--flex > li img:hover {
       transform: scale(1.1, 1.1);
       transition: all 0.7s; }
+
+@media (min-width: 992px) {
+  .contactos--format--color {
+    height: 8vmin;
+    width: 90vmin; }
+  .contactos__list--flex > li img {
+    width: 5vmin; } }
 
 .footer--flex--color {
   background: #ddf1ff;
@@ -152,6 +162,16 @@ body {
 
 .carousel--color {
   background-color: #fcf6f1; }
+
+.carousel__title--center {
+  text-align: center;
+  margin-top: 5vmin;
+  font-weight: 600;
+  letter-spacing: 1vmin;
+  word-spacing: 3vmin; }
+
+.carousel-item figure > figcaption {
+  font-size: x-large; }
 
 .body__content--flex {
   height: 100%; }
@@ -252,8 +272,11 @@ body {
     grid-area: imagen;
     transition: all 0.7s; }
   .piezas__container--flex figure > figcaption, .piezas__container--flex--card figure > figcaption {
-    grid-area: texto; }
+    grid-area: texto;
+    padding: 50px 50px 0px; }
 
+/* Esto controla las imagenes y las aplica como un background image para conseguir el efecto deseado (zoom rapido en "imagen") */
+/* Soluciona el problema de distintos tamaños de imagenes, auto centrandolos y creando un tamaño uniforme conservando buena calidad de la imagen */
 .img-1 {
   background: url(../images/imgp1.jpg);
   background-size: 100%;
@@ -333,3 +356,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   transition: background-size 2s ease; }
+
+@media (min-width: 992px) {
+  .piezas__container--flex--card figure {
+    grid-template-columns: 400px;
+    grid-template-rows: 370px 150px; }
+  .piezas__container--flex--card figure > figcaption {
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 2px; } }
